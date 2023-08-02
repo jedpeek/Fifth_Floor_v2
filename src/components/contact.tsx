@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const form = useRef()<HTMLInputElement>();
+  const form = useRef<HTMLInputElement>();
   const sendEmail = (e) => {
     e.preventDefault();
 

@@ -32,7 +32,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    form.current = {};
   };
 
   return (
@@ -52,7 +51,7 @@ const Contact = () => {
             <div className="flex flex-wrap -m-2">
               <div className="p-2 w-1/2">
                 <div className="relative">
-                  <label for="name" className="leading-7 text-sm text-gray-600">
+                  <label className="leading-7 text-sm text-gray-600">
                     Name
                   </label>
                   <input
@@ -66,10 +65,7 @@ const Contact = () => {
               </div>
               <div className="p-2 w-1/2">
                 <div className="relative">
-                  <label
-                    for="email"
-                    className="leading-7 text-sm text-gray-600"
-                  >
+                  <label className="leading-7 text-sm text-gray-600">
                     Email
                   </label>
                   <input
@@ -82,10 +78,7 @@ const Contact = () => {
               </div>
               <div className="p-2 w-full">
                 <div className="relative">
-                  <label
-                    for="message"
-                    className="leading-7 text-sm text-gray-600"
-                  >
+                  <label className="leading-7 text-sm text-gray-600">
                     Message
                   </label>
                   <textarea

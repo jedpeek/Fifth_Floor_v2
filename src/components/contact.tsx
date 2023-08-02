@@ -1,9 +1,15 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const form = useRef<HTMLInputElement>();
+  const form = useRef();
+
+  useEffect(() => {
+    console.log(form.current);
+  }, [form]);
+
+  console.log("HIIIIIII", form);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -54,6 +60,7 @@ const Contact = () => {
                     type="text"
                     id="user_name"
                     name="user_name"
+                    placeholder="Name"
                     className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>

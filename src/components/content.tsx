@@ -42,7 +42,7 @@ const Content = () => {
               Meet the Band
             </h2>
             <p className="leading-relaxed text-base">
-              Meet the members of Fifth Floor with through this BTS footage of a
+              Meet the members of Fifth Floor with through BTS footage of a
               recent performance
             </p>
           </div>

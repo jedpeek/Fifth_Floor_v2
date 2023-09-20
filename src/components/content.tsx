@@ -1,5 +1,4 @@
 import React from "react";
-import ModalVideo from "./modalVideo";
 
 const Content = () => {
   return (

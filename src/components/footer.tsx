@@ -18,7 +18,7 @@ const Footer = () => {
         </a>
         <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
           <a
-            href="https://www.instagram.com/fifthfloor_band/?hl=en"
+            href="https://www.instagram.com/fifthfloor.band/"
             className="text-gray-600 ml-1"
             rel="noopener noreferrer"
             target="_blank"
@@ -33,7 +33,7 @@ const Footer = () => {
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              className="w-5 h-5"
+              className="w-5 h-5 mr-2 outline border-solid hover:scale-110 duration-150 hover:text-sky-700"
               viewBox="0 0 24 24"
             >
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
@@ -45,7 +45,7 @@ const Footer = () => {
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              className="w-5 h-5"
+              className="w-5 h-5 hover:scale-110 duration-150 hover:text-red-600"
               viewBox="0 0 24 24"
             >
               <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
@@ -58,7 +58,7 @@ const Footer = () => {
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              className="w-5 h-5"
+              className="w-5 h-5   hover:scale-110 duration-150 hover:text-yellow-600"
               viewBox="0 0 24 24"
             >
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>

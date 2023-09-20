@@ -23,15 +23,13 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          // @ts-ignore
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
         }
       );
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
   };
 
   return (

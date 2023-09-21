@@ -4,7 +4,8 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import Hero from "../components/hero";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <ToastContainer />
       </body>
     </html>
   );

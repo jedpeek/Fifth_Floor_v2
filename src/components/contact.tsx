@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-
+import { toast } from "react-toastify";
 const Contact = () => {
   const form = useRef();
 
@@ -25,9 +25,15 @@ const Contact = () => {
           console.log(result.text);
           // @ts-ignore
           form.current.reset();
+          toast.success("Thanks for reaching out! We'll be in touch soon.", {
+            position: toast.POSITION.TOP_CENTER,
+          });
         },
         (error) => {
           console.log(error.text);
+          toast.error("Sorry, something went wrong. Please try again later.", {
+            position: toast.POSITION.TOP_LEFT,
+          });
         }
       );
   };

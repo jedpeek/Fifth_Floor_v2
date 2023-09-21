@@ -3,7 +3,7 @@ export default function Band() {
     {
       name: "Cameron Lewis",
       title: "Vocals / Guitar",
-      bio: " Meet Cameron Lewis. Cameron has been a musician for 23 years and performing professionally for 14 years. Cameron got study music in college and earned a BA in Music from Point Loma Nazarene University in San Diego, CA.",
+      bio: " Meet Cameron Lewis. Cameron has been a musician for 23 years and performing professionally for 14 years. Cameron studied music in college and earned a BA in Music from Point Loma Nazarene University in San Diego, CA.",
       instagram: "https://www.instagram.com/cam.lws/",
       photo: "/assets/Cam1.jpeg",
     },

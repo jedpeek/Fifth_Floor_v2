@@ -93,12 +93,12 @@ const Contact = () => {
                 <input
                   type="submit"
                   value="Send"
-                  className="flex mx-auto text-white bg-sky-500 border-0 py-2 px-8 focus:outline-none hover:bg-sky-600 rounded text-lg"
+                  className="flex mx-auto text-white bg-sky-500 border-0 py-2 px-8 focus:outline-none hover:bg-sky-600 hover:scale-110 duration-150 rounded text-lg"
                 />
               </div>
 
               <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <a className="text-sky-500">FifthFloorMusic@gmail.com</a>
+                {/* <a className="text-sky-500">FifthFloorMusic@gmail.com</a> */}
                 <p className="leading-normal my-5">
                   Est. 2023
                   <br />

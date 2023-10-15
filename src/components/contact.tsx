@@ -91,7 +91,7 @@ const Contact = () => {
                   <textarea
                     id="message"
                     name="message"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-sky-500 focus:bg-white focus:ring-2 focus:ring-sky-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
               </div>
@@ -104,7 +104,6 @@ const Contact = () => {
               </div>
 
               <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                {/* <a className="text-sky-500">FifthFloorMusic@gmail.com</a> */}
                 <p className="leading-normal my-5">
                   Est. 2023
                   <br />

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { FiMenu } from "react-icons/Fi";
+
 import Image from "next/image";
 const Header = () => {
   let Links = [
@@ -41,9 +41,6 @@ const Header = () => {
             CONTACT
           </button>
         </Link>
-        {/* <div className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden hover:scale-110 duration-150">
-          <FiMenu onClick={() => setOpen(!open)} />
-        </div> */}
       </div>
     </header>
   );

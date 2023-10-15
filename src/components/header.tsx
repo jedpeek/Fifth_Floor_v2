@@ -30,7 +30,7 @@ const Header = () => {
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center"></nav>
 
         {Links.map((link) => (
-          <Link href={link.link}>
+          <Link href={link.link} key={link.link}>
             <p className="mr-7 text-xl my-5 hover:underline underline-offset-4 hover:scale-110 duration-150">
               {link.name}
             </p>

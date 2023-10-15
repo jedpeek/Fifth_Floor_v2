@@ -6,6 +6,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

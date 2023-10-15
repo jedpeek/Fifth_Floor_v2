@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 export default function Band() {
   const bandData = [
     {
@@ -39,7 +41,12 @@ export default function Band() {
 
   const renderBand = (bandMember) => {
     return (
-      <div className="p-4 lg:w-1/2">
+      <motion.div
+        initial={{ y: 30, opacity: 0, scale: 0.8 }}
+        whileInView={{ y: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className="p-4 lg:w-1/2"
+      >
         <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
           <img
             alt="team"
@@ -47,7 +54,7 @@ export default function Band() {
             src={bandMember.photo}
           />
           <div className="flex-grow sm:pl-8">
-            <h2 className="title-font font-medium text-lg text-gray-900">
+            <h2 className="title-font font-medium text-lg text-gray-900 underline underline-offset-4">
               {bandMember.name}
             </h2>
             <h3 className="text-gray-500 mb-3">{bandMember.title}</h3>
@@ -66,23 +73,26 @@ export default function Band() {
             </span>
           </div>
         </div>
-      </div>
+      </motion.div>
     );
   };
 
   return (
-    <div className="text-gray-600 body-font bg-gradient-to-t from-sky-300">
+    <div className="text-gray-600 body-font bg-gradient-to-l from-sky-300">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
-          <h1 className="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">
+          <h1 className="text-3xl font-extrabold sm:text-5xl underline underline-offset-8  title-font mb-4 text-gray-900 tracking-widest">
             MEET THE BAND
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            {" "}
-            Hi everyone 👋🏼 We are Fifth Floor, a San Diego based band. We focus
-            on weddings & events and would love to play at your next
-            celebration! Reach out to us with any questions or interests! 🎸🤘🏽
-          </p>
+          <div className="justify justify-around ">
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-xl">
+              {" "}
+              <b>HI EVERYONE!</b> We are <b>Fifth Floor</b>, a San Diego based
+              band. We focus on <b>weddings & events</b> and would love to play
+              at your next <b>celebration!</b> Reach out to us with any
+              questions or interests!
+            </p>
+          </div>
         </div>
 
         <div className="flex flex-wrap -m-4">{bandData.map(renderBand)}</div>

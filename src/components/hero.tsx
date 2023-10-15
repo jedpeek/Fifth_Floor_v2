@@ -1,40 +1,45 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import { motion } from "framer-motion";
 const Hero = () => {
   return (
-    <section
-      className="text-gray-600 body-font bg-gradient-to-b from-sky-300"
-      id="hero"
-    >
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center ">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-9xl md: text-6xl text-4xl mb-4 font-medium text-gray-900">
-            FIFTH FLOOR
-          </h1>
-          <p className="mb-8 leading-relaxed">
-            Fifth Floor, a name inspired by the band's desire to elevate every
-            event to new heights, is a collective of highly talented musicians
-            and vocalists who share a passion for creating captivating moments
-            through music. With years of experience and a diverse range of
-            influences, they have perfected the art of weaving melodies that
-            resonate with the hearts of both the couple and their guests.
-          </p>
-          <div className="flex justify-center">
-            <Link href="#contact">
-              <button className="inline-flex text-white bg-sky-500 border-0 py-2 px-6 focus:outline-none hover:bg-sky-600 rounded text-lg hover:scale-110 duration-150">
-                CONTACT
-              </button>
-            </Link>
-          </div>
-        </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <img
-            className="h-auto max-w-full rounded-full"
-            alt="hero"
-            src="/assets/FifthFloor_Hero.JPG"
-          />
+    <section className="relative bg-[url(/assets/fifth_floor_band_2.jpeg)] bg-cover bg-center bg-no-repeat">
+      <div className="absolute inset-0 bg-white/60 sm:bg-transparent sm:from-white/75 sm:to-white/25 sm:bg-gradient-to-r bg-gradient-to-l"></div>
+
+      <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+        <div className="max-w-xl text-center sm:text-left rtl:sm:text-right">
+          <motion.h1
+            initial={{ y: 30, opacity: 0, scale: 0.8 }}
+            whileInView={{ y: 0, opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-3xl font-extrabold sm:text-5xl"
+          >
+            Fifth Floor
+            <motion.strong
+              initial={{ y: 30, opacity: 0, scale: 0.8 }}
+              whileInView={{ y: 0, opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              className="block font-extrabold text-sky-600"
+            >
+              Music to Elevate your next event.
+            </motion.strong>
+          </motion.h1>
+
+          <motion.div
+            initial={{ y: 30, opacity: 0, scale: 0.8 }}
+            whileInView={{ y: 0, opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7 }}
+            className=" gap-4 flex flex-wrap text-center py-3"
+          >
+            <a
+              href="/contact"
+              className="flex justify w-full rounded bg-sky-500 px-12 py-3 text-sm font-medium text-white shadow hover:bg-sky-600 hover:scale-110 duration-150 focus:outline-none focus:ring active:bg-sky-500 sm:w-auto"
+            >
+              CONTACT
+            </a>
+          </motion.div>
         </div>
       </div>
     </section>

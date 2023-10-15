@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 export default function Band() {
   const bandData = [
     {
@@ -46,10 +47,11 @@ export default function Band() {
         whileInView={{ y: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
         className="p-4 lg:w-1/2"
+        key={bandMember.name}
       >
         <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-          <img
-            alt="team"
+          <Image
+            alt="Band member"
             className="flex-shrink-0 rounded-lg w-60 h-60 object-cover object-top sm:mb-0 mb-4"
             src={bandMember.photo}
           />

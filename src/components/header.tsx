@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { FiMenu } from "react-icons/Fi";
+import Image from "next/image";
 const Header = () => {
   let Links = [
     { name: "HOME", link: "/" },
@@ -17,7 +18,10 @@ const Header = () => {
           className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
           href="/"
         >
-          <img
+          <Image
+            alt="Fifth Floor Logo"
+            height={1000}
+            width={1000}
             src="/assets/FifthFloor_Logo_1.png"
             className="w-20 h-20 text-white p-2 bg-white-500 rounded-full outline-style: solid"
           />

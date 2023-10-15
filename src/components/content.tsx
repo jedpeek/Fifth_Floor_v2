@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const Content = () => {
   return (
     <section className="text-gray-700 body-font " id="about">
@@ -11,8 +11,10 @@ const Content = () => {
                 href="https://www.youtube.com/watch?v=eH3giaIzONA"
                 target="_blank"
               >
-                <img
+                <Image
                   alt="content"
+                  height={1000}
+                  width={1000}
                   className="object-cover object-center h-full w-full bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-75 transition duration-300 ease-in-out hover:opacity-100 "
                   src="/assets/FifthFloor_Band_2.jpg"
                 />
@@ -31,7 +33,9 @@ const Content = () => {
                 href="https://www.youtube.com/watch?v=7UoP9ABJXGE"
                 target="_blank"
               >
-                <img
+                <Image
+                  height={1000}
+                  width={1000}
                   alt="content"
                   className="object-cover object-center h-full w-full bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-75 transition duration-300 ease-in-out hover:opacity-100"
                   src="/assets/fifth_floor_band_2.jpeg"

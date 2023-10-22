@@ -13,10 +13,10 @@ const Content = () => {
             >
               <div className="relative bg-[url(/assets/fifth_floor_band_2.jpeg)] bg-cover bg-center bg-no-repeat rounded-lg h-64 overflow-hidden hover:scale-105 duration-150 opacity-75 transition duration-300 ease-in-out hover:opacity-100">
                 <motion.div
-                  initial={{ y: 30, opacity: 0, scale: 0.8 }}
+                  initial={{ y: 30, opacity: 0.4, scale: 0.8 }}
                   whileHover={{ y: 30, opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="absolute py-12 p-2"
+                  className="absolute py-12 p-12"
                 >
                   <h1 className="text-white font-bold text-6xl uppercase ">
                     {" "}
@@ -37,10 +37,10 @@ const Content = () => {
             >
               <div className="relative bg-[url(/assets/FifthFloor_Band_1.jpg)] bg-cover bg-center bg-no-repeat rounded-lg h-64 overflow-hidden hover:scale-105 duration-150 opacity-75 transition duration-300 ease-in-out hover:opacity-100">
                 <motion.div
-                  initial={{ y: 30, opacity: 0, scale: 0.8 }}
+                  initial={{ y: 30, opacity: 0.4, scale: 0.8 }}
                   whileHover={{ y: 30, opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="absolute py-12 p-2"
+                  className="absolute py-12 p-12"
                 >
                   <h1 className="text-white font-bold text-6xl uppercase ">
                     Meet the Band

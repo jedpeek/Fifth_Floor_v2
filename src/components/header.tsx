@@ -7,13 +7,11 @@ const Header = () => {
   let Links = [
     { name: "HOME", link: "/" },
     { name: "ABOUT", link: "/about" },
-    // { name: "CONTACT", link: "/contact" },
   ];
 
-  let [open, setOpen] = useState(false);
   return (
-    <header className="text-gray-600 body-font ">
-      <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
+    <header className="text-gray-600 body-font justify-between">
+      <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center ">
         <a
           className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
           href="/"
@@ -23,7 +21,7 @@ const Header = () => {
             height={1000}
             width={1000}
             src="/assets/FifthFloor_Logo_1.png"
-            className="w-20 h-20 text-white p-2 bg-white-500 rounded-full outline-style: solid"
+            className="w-20 h-20 text-white p-2 bg-white-500 rounded-full"
           />
           <span className="ml-3 text-xl">FIFTH FLOOR</span>
         </a>

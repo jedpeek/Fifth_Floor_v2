@@ -1,54 +1,58 @@
-import React from "react";
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 const Content = () => {
   return (
     <section className="text-gray-700 body-font " id="about">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -mx-4 -mb-10 text-center">
           <div className="sm:w-1/2 mb-10 px-4">
-            <div className="rounded-lg h-64 overflow-hidden hover:scale-105 duration-150">
-              <a
-                href="https://www.youtube.com/watch?v=eH3giaIzONA"
-                target="_blank"
-              >
-                <Image
-                  alt="content"
-                  height={1000}
-                  width={1000}
-                  className="object-cover object-center h-full w-full bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-75 transition duration-300 ease-in-out hover:opacity-100 "
-                  src="/assets/FifthFloor_Band_2.jpg"
-                />
-              </a>
-            </div>
-            <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
-              Check Us Out
-            </h2>
-            <p className="leading-relaxed text-base">
-              Fifth Floor performing some of your favorite songs
-            </p>
+            <a
+              href="https://www.youtube.com/watch?v=eH3giaIzONA"
+              target="_blank"
+            >
+              <div className="relative bg-[url(/assets/fifth_floor_band_2.jpeg)] bg-cover bg-center bg-no-repeat rounded-lg h-64 overflow-hidden hover:scale-105 duration-150 opacity-75 transition duration-300 ease-in-out hover:opacity-100">
+                <motion.div
+                  initial={{ y: 30, opacity: 0, scale: 0.8 }}
+                  whileHover={{ y: 30, opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                  className="absolute py-12 p-2"
+                >
+                  <h1 className="text-white font-bold text-6xl uppercase ">
+                    {" "}
+                    Check Us Out{" "}
+                  </h1>
+
+                  <p className="text-gray-200 font-bold text-2xl">
+                    Fifth Floor performing some of your favorite songs
+                  </p>
+                </motion.div>
+              </div>
+            </a>
           </div>
           <div className="sm:w-1/2 mb-10 px-4">
-            <div className="rounded-lg h-64 overflow-hidden hover:scale-105 duration-150">
-              <a
-                href="https://www.youtube.com/watch?v=7UoP9ABJXGE"
-                target="_blank"
-              >
-                <Image
-                  height={1000}
-                  width={1000}
-                  alt="content"
-                  className="object-cover object-center h-full w-full bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-75 transition duration-300 ease-in-out hover:opacity-100"
-                  src="/assets/fifth_floor_band_2.jpeg"
-                />
-              </a>
-            </div>
-            <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
-              Meet the Band
-            </h2>
-            <p className="leading-relaxed text-base">
-              Meet the members of Fifth Floor with through BTS footage of a
-              recent performance
-            </p>
+            <a
+              href="https://www.youtube.com/watch?v=eH3giaIzONA"
+              target="_blank"
+            >
+              <div className="relative bg-[url(/assets/FifthFloor_Band_1.jpg)] bg-cover bg-center bg-no-repeat rounded-lg h-64 overflow-hidden hover:scale-105 duration-150 opacity-75 transition duration-300 ease-in-out hover:opacity-100">
+                <motion.div
+                  initial={{ y: 30, opacity: 0, scale: 0.8 }}
+                  whileHover={{ y: 30, opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                  className="absolute py-12 p-2"
+                >
+                  <h1 className="text-white font-bold text-6xl uppercase ">
+                    Meet the Band
+                  </h1>
+
+                  <p className="text-gray-200 font-bold text-2xl">
+                    Meet the members of Fifth Floor with through BTS footage of
+                    a recent performance
+                  </p>
+                </motion.div>
+              </div>
+            </a>
           </div>
         </div>
       </div>

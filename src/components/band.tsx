@@ -62,12 +62,12 @@ export default function Band() {
               {bandMember.name}
             </h2>
             <h3 className="text-gray-500 mb-3">{bandMember.title}</h3>
-            <p className="mb-4">{bandMember.bio}</p>
+            <p className="mb-4 font-semibold">{bandMember.bio}</p>
             <span className="inline-flex">
               <a href={bandMember.instagram} target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 hover:scale-110 duration-150 hover:text-yellow-300"
+                  className="h-5 w-5 hover:scale-110 duration-150 hover:text-yellow-500"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >

@@ -54,7 +54,10 @@ export default function Media() {
         <div className="flex flex-wrap -m-4">
           {playlistData.map((song) => {
             return (
-              <div className="lg:w-1/4 md:w-1/2 p-4 w-full hover:scale-110 duration-150">
+              <div
+                className="lg:w-1/4 md:w-1/2 p-4 w-full hover:scale-110 duration-150"
+                key={song.track.external_urls.spotify}
+              >
                 <a
                   href={song.track.external_urls.spotify}
                   className="block relative h-48 rounded overflow-hidden"

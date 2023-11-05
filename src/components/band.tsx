@@ -27,7 +27,7 @@ export default function Band() {
     {
       name: "Kaden McGarity",
       title: "Vocals",
-      bio: "Meet Kaden McGarity. Kayden has been performing for almost14 years. Kaden performs around San Diego, CA various events. Kaden volunteers weekly at her church as part of the Worship Team.",
+      bio: "Meet Kaden McGarity. Kaden has been performing for almost 14 years. Kaden performs around San Diego, CA various events. Kaden volunteers weekly at her church as part of the Worship Team.",
       instagram: "https://www.instagram.com/kadenmcgarity/",
       photo: "/assets/Kayden1.jpeg",
     },

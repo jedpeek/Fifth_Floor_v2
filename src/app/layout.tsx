@@ -6,6 +6,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Navbar from "@/components/navbar";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -22,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={manrope.className}>
-        <Header />
+        <Navbar />
         {children}
         <Footer />
         <ToastContainer />

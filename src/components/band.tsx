@@ -95,6 +95,7 @@ export default function Band() {
               band. We focus on <b>weddings & events</b> and would love to play
               at your next <b>celebration!</b> Reach out to us with any
               questions or interests!
+              {bandData.about}
             </p>
           </div>
         </div>

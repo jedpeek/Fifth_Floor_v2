@@ -29,7 +29,7 @@ const Footer = () => {
             @FifthFloorSD
           </a>
         </p>
-        <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        {/* <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
           <a className="text-gray-500">
             <svg
               fill="currentColor"
@@ -68,7 +68,7 @@ const Footer = () => {
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
             </svg>
           </a>
-        </span>
+        </span> */}
       </div>
     </footer>
   );

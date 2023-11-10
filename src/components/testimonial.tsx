@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 function Testimonial() {
   return (
     <div className="text-gray-600 body-font">
@@ -20,7 +20,9 @@ function Testimonial() {
               </svg>
               <p className="leading-relaxed mb-6">Great group! Great energy!</p>
               <a className="inline-flex items-center">
-                <img
+                <Image
+                  height={1000}
+                  width={1000}
                   alt="testimonial"
                   src="/assets/FifthFloor_Logo_1.png"
                   className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
@@ -52,7 +54,9 @@ function Testimonial() {
                 professional.
               </p>
               <a className="inline-flex items-center">
-                <img
+                <Image
+                  height={1000}
+                  width={1000}
                   alt="testimonial"
                   src="/assets/FifthFloor_Logo_1.png"
                   className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"

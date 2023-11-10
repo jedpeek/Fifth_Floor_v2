@@ -43,12 +43,11 @@ const Content = () => {
                   className="absolute py-12 p-12"
                 >
                   <h1 className="text-white font-bold text-6xl uppercase ">
-                    Meet the Band
+                    Classic Music
                   </h1>
 
                   <p className="text-gray-200 font-bold text-2xl">
-                    Meet the members of Fifth Floor with through BTS footage of
-                    a recent performance
+                    Fifth Floor performing some classics
                   </p>
                 </motion.div>
               </div>

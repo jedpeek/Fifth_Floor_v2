@@ -110,6 +110,8 @@ const Contact = () => {
                   Est. 2023
                   <br />
                   San Diego, CA
+                  <br />
+                  fifthfloorsd@gmail.com
                 </p>
               </div>
             </div>

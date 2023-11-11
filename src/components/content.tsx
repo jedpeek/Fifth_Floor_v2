@@ -32,7 +32,7 @@ const Content = () => {
           </div>
           <div className="sm:w-1/2 mb-10 px-4">
             <a
-              href="https://www.youtube.com/watch?v=eH3giaIzONA"
+              href="https://www.youtube.com/watch?v=z7u58I2NmYo"
               target="_blank"
             >
               <div className="relative bg-[url(/assets/FifthFloor_Band_1.jpg)] bg-cover bg-center bg-no-repeat rounded-lg h-64 overflow-hidden hover:scale-105 duration-150 opacity-75 transition duration-300 ease-in-out hover:opacity-100">

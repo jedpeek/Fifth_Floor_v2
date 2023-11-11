@@ -39,6 +39,20 @@ const Hero = () => {
             >
               CONTACT
             </a>
+            <a
+              href="https://www.youtube.com/watch?v=uMmqrYJ8zZM"
+              target="_blank"
+              className="lg:hidden md:hidden sm:hidden uppercase flex justify w-full rounded bg-sky-500 px-12 py-3 text-sm font-medium text-white shadow hover:bg-sky-600 hover:scale-110 duration-150 focus:outline-none focus:ring active:bg-sky-500 sm:w-auto"
+            >
+              Check us out
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=z7u58I2NmYo"
+              target="_blank"
+              className="lg:hidden md:hidden sm:hidden uppercase flex justify w-full rounded bg-sky-500 px-12 py-3 text-sm font-medium text-white shadow hover:bg-sky-600 hover:scale-110 duration-150 focus:outline-none focus:ring active:bg-sky-500 sm:w-auto"
+            >
+              Recent Performance
+            </a>
           </motion.div>
         </div>
       </div>
